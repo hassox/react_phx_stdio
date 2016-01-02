@@ -19,7 +19,7 @@ defmodule ReactPhxStdio.Mixfile do
   def application do
     [mod: {ReactPhxStdio, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :std_json_io]]
   end
 
   # Specifies which paths to compile per environment.
@@ -36,6 +36,7 @@ defmodule ReactPhxStdio.Mixfile do
      {:phoenix_html, "~> 2.3"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
+     {:std_json_io, path: "/Users/dneighman/Code/std_json_io"},
      {:cowboy, "~> 1.0"}]
   end
 
