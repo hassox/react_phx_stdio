@@ -19,4 +19,12 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
-console.log("HAI");
+
+import React from "react";
+import ReactDOM from "react-dom";
+import HelloWorld from "./components/main";
+
+var App = React.createFactory(HelloWorld);
+
+ReactDOM.render(App(window.APP_PROPS), document.getElementById('content'));
+

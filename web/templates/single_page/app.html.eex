@@ -1,0 +1,3 @@
+<div id='content'><%= raw @html %></div>
+<script>APP_PROPS=<%= raw Poison.encode!(@props) %></script>
+

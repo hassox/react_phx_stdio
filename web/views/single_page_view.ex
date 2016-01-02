@@ -9,6 +9,7 @@ defmodule ReactPhxStdio.SinglePageView do
       component: "./priv/server/js/component.js",
       props: props,
     })
-    {:safe, [result["html"]]}
+
+    render "app.html", html: result["html"], props: props
   end
 end
