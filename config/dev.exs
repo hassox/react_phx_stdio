@@ -44,3 +44,8 @@ config :react_phx_stdio, ReactPhxStdio.Repo,
   database: "react_phx_stdio_dev",
   hostname: "localhost",
   pool_size: 10
+
+config :react_phx_stdio, ReactPhxStdio.ReactIo,
+  watch_files: [
+    Path.join([__DIR__, "../priv/server/js/component.js"]) # only watch files in dev
+  ]
